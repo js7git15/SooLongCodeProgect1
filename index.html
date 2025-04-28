@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самый длинный HTML-документ в мире</title>
+    <style>
+        /* Начнем с огромной таблицы стилей */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        /* Добавим множество дополнительных стилей */
+        .box-1 { width: 100px; height: 100px; background: red; margin: 10px; }
+        .box-2 { width: 100px; height: 100px; background: blue; margin: 10px; }
+        .box-3 { width: 100px; height: 100px; background: green; margin: 10px; }
+        .box-4 { width: 100px; height: 100px; background: yellow; margin: 10px; }
+        .box-5 { width: 100px; height: 100px; background: purple; margin: 10px; }
+        .box-6 { width: 100px; height: 100px; background: orange; margin: 10px; }
+        .box-7 { width: 100px; height: 100px; background: pink; margin: 10px; }
+        .box-8 { width: 100px; height: 100px; background: brown; margin: 10px; }
+        .box-9 { width: 100px; height: 100px; background: gray; margin: 10px; }
+        .box-10 { width: 100px; height: 100px; background: black; margin: 10px; }
+        
+        /* Еще больше стилей */
+        .text-large { font-size: 24px; }
+        .text-medium { font-size: 18px; }
+        .text-small { font-size: 14px; }
+        .text-bold { font-weight: bold; }
+        .text-italic { font-style: italic; }
+        .text-underline { text-decoration: underline; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .text-left { text-align: left; }
+        
+        /* Стили для таблиц */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* Добавим анимации */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .spin {
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        /* И еще больше стилей... */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        .btn-primary { background: #3498db; }
+        .btn-primary:hover { background: #2980b9; }
+        .btn-secondary { background: #7f8c8d; }
+        .btn-secondary:hover { background: #95a5a6; }
+        .btn-success { background: #2ecc71; }
+        .btn-success:hover { background: #27ae60; }
+        .btn-danger { background: #e74c3c; }
+        .btn-danger:hover { background: #c0392b; }
+        .btn-warning { background: #f39c12; }
+        .btn-warning:hover { background: #d35400; }
+        .btn-info { background: #1abc9c; }
+        .btn-info:hover { background: #16a085; }
+        .btn-light { background: #ecf0f1; color: #333; }
+        .btn-light:hover { background: #bdc3c7; }
+        .btn-dark { background: #34495e; }
+        .btn-dark:hover { background: #2c3e50; }
+        
+        /* Продолжаем добавлять стили... */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+        
+        .col-1 { grid-column: span 1; }
+        .col-2 { grid-column: span 2; }
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-5 { grid-column: span 5; }
+        .col-6 { grid-column: span 6; }
+        .col-7 { grid-column: span 7; }
+        .col-8 { grid-column: span 8; }
+        .col-9 { grid-column: span 9; }
+        .col-10 { grid-column: span 10; }
+        .col-11 { grid-column: span 11; }
+        .col-12 { grid-column: span 12; }
+        
+        /* Медиа-запросы */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+        }
+        
+        /* И еще больше медиа-запросов... */
+        @media print {
+            body {
+                background: white;
+                color: black;
+                font-size: 12pt;
+            }
+            
+            nav, footer {
+                display: none;
+            }
+            
+            .btn {
+                display: none;
+            }
+        }
+        
+        /* Продолжаем добавлять стили... */
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .card-header {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-body {
+            line-height: 1.6;
+        }
+        
+        .card-footer {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        /* И так далее... */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Самый длинный HTML-документ в мире</h1>
+            <p>Этот документ создан для демонстрации очень длинного HTML-кода</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#section1">Раздел 1</a></li>
+                <li><a href="#section2">Раздел 2</a></li>
+                <li><a href="#section3">Раздел 3</a></li>
+                <li><a href="#section4">Раздел 4</a></li>
+                <li><a href="#section5">Раздел 5</a></li>
+                <li><a href="#section6">Раздел 6</a></li>
+                <li><a href="#section7">Раздел 7</a></li>
+                <li><a href="#section8">Раздел 8</a></li>
+                <li><a href="#section9">Раздел 9</a></li>
+                <li><a href="#section10">Раздел 10</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="section1">
+            <h2>Раздел 1: Введение</h2>
+            <p>Добро пожаловать на страницу с самым длинным HTML-документом. Этот документ содержит множество повторяющихся элементов, стилей и скриптов, чтобы сделать его как можно длиннее.</p>
+            
+            <div class="grid">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">Карточка 1</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки 1. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки 1</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">Карточка 2</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки 2. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки 2</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">Карточка 3</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки 3. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки 3</div>
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                    <th>Заголовок 3</th>
+                    <th>Заголовок 4</th>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                    <td>Ячейка 4</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 5</td>
+                    <td>Ячейка 6</td>
+                    <td>Ячейка 7</td>
+                    <td>Ячейка 8</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 9</td>
+                    <td>Ячейка 10</td>
+                    <td>Ячейка 11</td>
+                    <td>Ячейка 12</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="section2">
+            <h2>Раздел 2: Повторяющиеся элементы</h2>
+            <p>Этот раздел содержит множество повторяющихся элементов для увеличения длины кода.</p>
+            
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            <div class="box-6"></div>
+            <div class="box-7"></div>
+            <div class="box-8"></div>
+            <div class="box-9"></div>
+            <div class="box-10"></div>
+            
+            <p class="text-large">Большой текст</p>
+            <p class="text-medium">Средний текст</p>
+            <p class="text-small">Маленький текст</p>
+            <p class="text-bold">Жирный текст</p>
+            <p class="text-italic">Курсивный текст</p>
+            <p class="text-underline">Подчеркнутый текст</p>
+            
+            <a href="#" class="btn btn-primary">Основная кнопка</a>
+            <a href="#" class="btn btn-secondary">Вторичная кнопка</a>
+            <a href="#" class="btn btn-success">Успех</a>
+            <a href="#" class="btn btn-danger">Опасность</a>
+            <a href="#" class="btn btn-warning">Предупреждение</a>
+            <a href="#" class="btn btn-info">Информация</a>
+            <a href="#" class="btn btn-light">Светлая</a>
+            <a href="#" class="btn btn-dark">Темная</a>
+        </section>
+        
+        <!-- Добавим еще 8 аналогичных разделов с повторяющимся содержимым -->
+        <section id="section3">
+            <h2>Раздел 3: Еще больше элементов</h2>
+            <p>Этот раздел почти идентичен предыдущему, но с небольшими изменениями.</p>
+            
+            <div class="grid">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">Карточка A</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки A. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки A</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">Карточка B</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки B. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки B</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">Карточка C</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки C. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки C</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">Карточка D</div>
+                        <div class="card-body">
+                            <p>Это содержимое карточки D. Оно повторяется много раз в этом документе.</p>
+                        </div>
+                        <div class="card-footer">Футер карточки D</div>
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Колонка A</th>
+                    <th>Колонка B</th>
+                    <th>Колонка C</th>
+                    <th>Колонка D</th>
+                </tr>
+                <tr>
+                    <td>Данные 1</td>
+                    <td>Данные 2</td>
+                    <td>Данные 3</td>
+                    <td>Данные 4</td>
+                </tr>
+                <tr>
+                    <td>Данные 5</td>
+                    <td>Данные 6</td>
+                    <td>Данные 7</td>
+                    <td>Данные 8</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="section4">
+            <h2>Раздел 4: Формы</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Пол:</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Мужской</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Женский</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Другой</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Интересы:</label>
+                    <div>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Спорт</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Музыка</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Чтение</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="travel" name="interests" value="travel">
+                        <label for="travel">Путешествия</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Страна:</label>
+                    <select id="country" name="country" class="form-control">
+                        <option value="">Выберите страну</option>
+                        <option value="ru">Россия</option>
+                        <option value="us">США</option>
+                        <option value="gb">Великобритания</option>
+                        <option value="de">Германия</option>
+                        <option value="fr">Франция</option>
+                        <option value="it">Италия</option>
+                        <option value="es">Испания</option>
+                        <option value="jp">Япония</option>
+                        <option value="cn">Китай</option>
+                        <option value="in">Индия</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Отправить</button>
+                <button type="reset" class="btn btn-secondary">Сбросить</button>
+            </form>
+        </section>
+        
+        <!-- Продолжаем добавлять разделы... -->
+        <section id="section5">
+            <h2>Раздел 5: Изображения</h2>
+            <div class="grid">
+                <div class="col-3">
+                    <img src="https://via.placeholder.com/300x200" alt="Placeholder 1" class="img-fluid">
+                    <p>Изображение 1</p>
+                </div>
+                <div class="col-3">
+                    <img src="https://via.placeholder.com/300x200/ff0000" alt="Placeholder 2" class="img-fluid">
+                    <p>Изображение 2</p>
+                </div>
+                <div class="col-3">
+                    <img src="https://via.placeholder.com/300x200/00ff00" alt="Placeholder 3" class="img-fluid">
+                    <p>Изображение 3</p>
+                </div>
+                <div class="col-3">
+                    <img src="https://via.placeholder.com/300x200/0000ff" alt="Placeholder 4" class="img-fluid">
+                    <p>Изображение 4</p>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Placeholder 5" class="img-fluid">
+                    <p>Изображение 5</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/400x300/ffff00" alt="Placeholder 6" class="img-fluid">
+                    <p>Изображение 6</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/400x300/ff00ff" alt="Placeholder 7" class="img-fluid">
+                    <p>Изображение 7</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section6">
+            <h2>Раздел 6: Списки</h2>
+            
+            <div class="grid">
+                <div class="col-4">
+                    <h3>Маркированный список</h3>
+                    <ul>
+                        <li>Элемент списка 1</li>
+                        <li>Элемент списка 2</li>
+                        <li>Элемент списка 3</li>
+                        <li>Элемент списка 4</li>
+                        <li>Элемент списка 5</li>
+                        <li>Элемент списка 6</li>
+                        <li>Элемент списка 7</li>
+                        <li>Элемент списка 8</li>
+                    </ul>
+                </div>
+                
+                <div class="col-4">
+                    <h3>Нумерованный список</h3>
+                    <ol>
+                        <li>Первый элемент</li>
+                        <li>Второй элемент</li>
+                        <li>Третий элемент</li>
+                        <li>Четвертый элемент</li>
+                        <li>Пятый элемент</li>
+                        <li>Шестой элемент</li>
+                        <li>Седьмой элемент</li>
+                        <li>Восьмой элемент</li>
+                    </ol>
+                </div>
+                
+                <div class="col-4">
+                    <h3>Список определений</h3>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Язык гипертекстовой разметки</dd>
+                        
+                        <dt>CSS</dt>
+                        <dd>Каскадные таблицы стилей</dd>
+                        
+                        <dt>JavaScript</dt>
+                        <dd>Язык программирования для веб-страниц</dd>
+                        
+                        <dt>PHP</dt>
+                        <dd>Серверный язык программирования</dd>
+                        
+                        <dt>SQL</dt>
+                        <dd>Язык запросов к базам данных</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section7">
+            <h2>Раздел 7: Видео и аудио</h2>
+            
+            <div class="grid">
+                <div class="col-6">
+                    <h3>Видео</h3>
+                    <video width="100%" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео тег.
+                    </video>
+                </div>
+                
+                <div class="col-6">
+                    <h3>Аудио</h3>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудио тег.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="col-6">
+                    <h3>YouTube видео</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="col-6">
+                    <h3>Google карта</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899247295!2d37.615310715930664!3d55.75202398055206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1610000000000!5m2!1sru!2sru" width="100%" height="315" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section8">
+            <h2>Раздел 8: Анимации</h2>
+            
+            <div class="grid">
+                <div class="col-3">
+                    <div class="box-1 spin"></div>
+                    <p>Вращающийся красный квадрат</p>
+                </div>
+                
+                <div class="col-3">
+                    <div class="box-2 fade-in"></div>
+                    <p>Появляющийся синий квадрат</p>
+                </div>
+                
+                <div class="col-3">
+                    <div class="box-3 spin"></div>
+                    <p>Вращающийся зеленый квадрат</p>
+                </div>
+                
+                <div class="col-3">
+                    <div class="box-4 fade-in"></div>
+                    <p>Появляющийся желтый квадрат</p>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="col-6">
+                    <div class="card fade-in">
+                        <div class="card-header">Анимированная карточка</div>
+                        <div class="card-body">
+                            <p>Эта карточка плавно появляется благодаря анимации fade-in.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header spin">Вращающийся заголовок</div>
+                        <div class="card-body">
+                            <p>Заголовок этой карточки постоянно вращается.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section9">
+            <h2>Раздел 9: JavaScript</h2>
+            
+            <div class="grid">
+                <div class="col-6">
+                    <h3>Калькулятор</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="number" id="num1" class="form-control" placeholder="Первое число">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="num2" class="form-control" placeholder="Второе число">
+                            </div>
+                            <div class="form-group">
+                                <select id="operation" class="form-control">
+                                    <option value="add">Сложение</option>
+                                    <option value="subtract">Вычитание</option>
+                                    <option value="multiply">Умножение</option>
+                                    <option value="divide">Деление</option>
+                                </select>
+                            </div>
+                            <button onclick="calculate()" class="btn btn-primary">Вычислить</button>
+                            <div class="form-group">
+                                <h4>Результат: <span id="result">0</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6">
+                    <h3>Таймер</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Врем прошло: <span id="timer">0</span> секунд</h4>
+                            <button onclick="startTimer()" class="btn btn-success">Старт</button>
+                            <button onclick="stopTimer()" class="btn btn-danger">Стоп</button>
+                            <button onclick="resetTimer()" class="btn btn-secondary">Сброс</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="col-6">
+                    <h3>Слайдер</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="slider">
+                                <img src="https://via.placeholder.com/800x400" id="slide" class="img-fluid">
+                            </div>
+                            <div class="text-center" style="margin-top: 15px;">
+                                <button onclick="prevSlide()" class="btn btn-primary">Предыдущее</button>
+                                <button onclick="nextSlide()" class="btn btn-primary">Следующее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6">
+                    <h3>Форма с валидацией</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="validation-form">
+                                <div class="form-group">
+                                    <label for="val-name">Имя:</label>
+                                    <input type="text" id="val-name" class="form-control" required>
+                                    <div class="invalid-feedback">Пожалуйста, введите имя</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="val-email">Email:</label>
+                                    <input type="email" id="val-email" class="form-control" required>
+                                    <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section10">
+            <h2>Раздел 10: Заключение</h2>
+            <p>Это последний раздел нашего очень длинного HTML-документа. Надеемся, вам понравилось это путешествие по бесконечным тегам и атрибутам.</p>
+            
+            <div class="card">
+                <div class="card-header">Итоги</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Мы создали очень длинный HTML-документ</li>
+                        <li>Добавили множество разделов с повторяющимся содержимым</li>
+                        <li>Включили стили прямо в документ</li>
+                        <li>Добавили немного JavaScript для интерактивности</li>
+                        <li>Создали множество элементов: таблицы, формы, карточки и т.д.</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <p>Спасибо за внимание!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Самый длинный HTML-документ. Все права защищены.</p>
+            <p>Контактная информация: <a href="mailto:info@longest-html.com">info@longest-html.com</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Добавим большой JavaScript-код для увеличения длины документа
+        
+        // Калькулятор
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operation = document.getElementById('operation').value;
+            let result;
+            
+            switch(operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = 0;
+            }
+            
+            document.getElementById('result').textContent = result;
+        }
+        
+        // Таймер
+        let timerInterval;
+        let seconds = 0;
+        
+        function startTimer() {
+            if (!timerInterval) {
+                timerInterval = setInterval(() => {
+                    seconds++;
+                    document.getElementById('timer').textContent = seconds;
+                }, 1000);
+            }
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+        
+        function resetTimer() {
+            stopTimer();
+            seconds = 0;
+            document.getElementById('timer').textContent = seconds;
+        }
+        
+        // Слайдер
+        const slides = [
+            'https://via.placeholder.com/800x400/ff0000',
+            'https://via.placeholder.com/800x400/00ff00',
+            'https://via.placeholder.com/800x400/0000ff',
+            'https://via.placeholder.com/800x400/ffff00',
+            'https://via.placeholder.com/800x400/ff00ff'
+        ];
+        
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            
+            document.getElementById('slide').src = slides[currentSlide];
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        
+        // Инициализация слайдера
+        showSlide(0);
+        
+        // Валидация формы
+        document.getElementById('validation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const nameInput = document.getElementById('val-name');
+            const emailInput = document.getElementById('val-email');
+            
+            // Валидация имени
+            if (nameInput.value.trim() === '') {
+                nameInput.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                nameInput.classList.remove('is-invalid');
+            }
+            
+            // Валидация email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                emailInput.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                emailInput.classList.remove('is-invalid');
+            }
+            
+            if (isValid) {
+                alert('Форма успешно отправлена!');
+                this.reset();
+            }
+        });
+        
+        // Добавим еще больше JavaScript-кода...
+        
+        // Функция для создания случайного цвета
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        
+        // Изменение цвета фона при клике
+        document.addEventListener('click', function() {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+        
+        // Анимация при прокрутке
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const boxes = document.querySelectorAll('.box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10');
+            
+            boxes.forEach((box, index) => {
+                box.style.transform = `rotate(${scrollPosition / 10 + index * 10}deg)`;
+            });
+        });
+        
+        // Добавим обработчики для всех кнопок
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            button.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Создадим множество ненужных функций для увеличения длины кода
+        function unusedFunction1() {
+            console.log('Эта функция никогда не вызывается');
+            return Math.random() * 100;
+        }
+        
+        function unusedFunction2(param1, param2) {
+            if (param1 > param2) {
+                return param1 * param2;
+            } else {
+                return param1 + param2;
+            }
+        }
+        
+        function calculateFactorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            return n * calculateFactorial(n - 1);
+        }
+        
+        function generateFibonacciSequence(length) {
+            const sequence = [0, 1];
+            for (let i = 2; i < length; i++) {
+                sequence.push(sequence[i-1] + sequence[i-2]);
+            }
+            return sequence;
+        }
+        
+        function isPrime(num) {
+            if (num <= 1) return false;
+            if (num === 2) return true;
+            
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            
+            return true;
+        }
+        
+        // Добавим обработчик для всех карточек
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
+                setTimeout(() => {
+                    this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                }, 500);
+            });
+        });
+        
+        // И еще больше JavaScript-кода...
+        const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'gray', 'black'];
+        
+        function changeBoxColors() {
+            const boxes = document.querySelectorAll('[class^="box-"]');
+            boxes.forEach((box, index) => {
+                box.style.backgroundColor = colors[(index + Math.floor(Math.random() * 3)) % colors.length];
+            });
+        }
+        
+        // Вызываем функцию каждые 3 секунды
+        setInterval(changeBoxColors, 3000);
+        
+        // Добавим обработчик для навигации
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Функция для измерения производительности
+        function measurePerformance() {
+            const startTime = performance.now();
+            
+            // Выполняем какие-то вычисления
+            let sum = 0;
+            for (let i = 0; i < 1000000; i++) {
+                sum += Math.sqrt(i);
+            }
+            
+            const endTime = performance.now();
+            console.log(`Вычисления заняли ${endTime - startTime} миллисекунд`);
+        }
+        
+        // Вызываем функцию измерения производительности
+        measurePerformance();
+        
+        // Добавим обработчик для формы
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Форма отправлена! (Но на самом деле нет, это просто демонстрация)');
+        });
+        
+        // И еще больше кода...
+        const data = {
+            users: [
+                { id: 1, name: 'Иван', age: 30 },
+                { id: 2, name: 'Мария', age: 25 },
+                { id: 3, name: 'Алексей', age: 35 },
+                { id: 4, name: 'Ольга', age: 28 },
+                { id: 5, name: 'Дмитрий', age: 40 }
+            ],
+            products: [
+                { id: 1, name: 'Телефон', price: 20000 },
+                { id: 2, name: 'Ноутбук', price: 50000 },
+                { id: 3, name: 'Наушники', price: 5000 },
+                { id: 4, name: 'Клавиатура', price: 2000 },
+                { id: 5, name: 'Мышь', price: 1000 }
+            ]
+        };
+        
+        function renderUsers() {
+            const usersContainer = document.createElement('div');
+            usersContainer.innerHTML = '<h3>Пользователи</h3><ul></ul>';
+            const ul = usersContainer.querySelector('ul');
+            
+            data.users.forEach(user => {
+                const li = document.createElement('li');
+                li.textContent = `${user.name}, ${user.age} лет`;
+                ul.appendChild(li);
+            });
+            
+            return usersContainer;
+        }
+        
+        function renderProducts() {
+            const productsContainer = document.createElement('div');
+            productsContainer.innerHTML = '<h3>Продукты</h3><ul></ul>';
+            const ul = productsContainer.querySelector('ul');
+            
+            data.products.forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = `${product.name} - ${product.price} руб.`;
+                ul.appendChild(li);
+            });
+            
+            return productsContainer;
+        }
+        
+        // Добавим сгенерированный контент в раздел 10
+        document.addEventListener('DOMContentLoaded', function() {
+            const section10 = document.getElementById('section10');
+            section10.appendChild(renderUsers());
+            section10.appendChild(renderProducts());
+        });
+    </script>
+</body>
+</html>
